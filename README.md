@@ -45,22 +45,22 @@ Nous savons que la cible s’est hébergée à l’hôtel « Black Rain » et qu
 > **_Question :_** Quel filtre avez-vous utilisé
 > 
 > **_Réponse :_** 
-
+`wlan.fc.type_subtype==0x04 and wlan.ssid matches "(starbucks)|(hotel)"`
 ---
 > **_Question :_** Quel est l’adresse MAC de la cible ?
 > 
 > **_Réponse :_** 
-
+fc:f1:36:22:49:74
 ---
 > **_Question :_** Quel est le nom du constructeur de l’interface sans fils de la cible ?
 > 
 > **_Réponse :_** 
-
+Samsung
 ---
 > **_Question :_** Quel autres endroits la cible a-t-elle probablement visités ?
 > 
 > **_Réponse :_** 
-
+A Fleur de pain et à la Migros
 ---
 
 # Réseaux protégés par WEP
@@ -106,7 +106,7 @@ Maintenant que vous avez la clé WEP, configurez la dans Wireshark afin de déch
 > **_Question :_** Combien de temps avez-vous attendu pour obtenir la clé WEP ?
 > 
 > **_Réponse :_** 
-
+immédiat
 ---
 > **_Montrer une capture d'écran de l'obtention de la clé WEP_**
 > 
@@ -116,7 +116,7 @@ Maintenant que vous avez la clé WEP, configurez la dans Wireshark afin de déch
 > **_Question :_** Arrivez-vous à récupérer les informations d’identification (credentials) de l’authentification basique http contenue dans la capture ?
 > 
 > **_Réponse :_** 
-
+admin:admin
 ---
 
 
@@ -165,12 +165,12 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 > **_Question :_** Combien de temps avez-vous attendu pour obtenir la passphrase WPA ?
 > 
 > **_Réponse :_** 
-
+10 secondes
 ---
 > **_Montrer une capture d'écran de l'obtention de la passphrase WPA_**
 > 
 > **_Capture ici_** 
-
+anticonstitutionnellement
 ---
 > **_Question :_** Lors de la capture, la cible a fait un « ping » sur un serveur. Arrivez-vous à dire de quel serveur il s’agit ?
 
@@ -181,6 +181,7 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 >
 > Nom de Domaine : ?
 
+31.13.64.35
 
 
 ### Exercice déchiffrement WPA 2 :
